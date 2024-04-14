@@ -1,0 +1,97 @@
+.navbar{background-color:#1999b2;}
+
+.navbar-toggler{
+    color: #fff;
+    border: 0;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+.dropdown-menu{
+    background-color: #45bbbd;
+    border-radius: 0;
+}
+
+.dropdown-menu[data-bs-popper]{
+    top: 3.55rem;
+}
+
+.dropdown-item:hover, .dropdown-item:focus{
+    background-color: #378e90;
+}
+
+.boasvindas{
+    background-image: url(../imagens/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-fluid{
+    --bs-gutter-x: 1.5rem;
+    padding-right: calc(var(--bs-gutter-x) * 0);
+    padding-left: calc(var(--bs-gutter-x) * 0);
+}
+
+.service{
+    background-color: rgb(45, 36, 24);
+    border-top: 1rem solid rgb(63, 50, 33);
+    border-bottom: 1rem solid rgb(63, 50, 33);
+}
+
+
+.scrollspy{
+    height: 10rem;
+    overflow: auto;
+}
+
+.curiosidade{
+    background-image: url(../imagens/fundo2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* .list-group{
+    width: 20%;
+    margin: 0 auto;
+} */
+
+.rodape{
+    background-color: #45bbbd;
+    color: #fff;
+    height: 5.5rem;
+}
+
+textarea{resize: none;}
+
+.custom-tooltip{
+    /* --bs-tooltip-font-size: 1rem; */
+    font-size: 1rem;
+    --bs-tooltip-bg: #060;
+    --bs-tooltip-padding-x: 1rem;
+    --bs-tooltip-padding-y: 0.5rem;
+}
+
+.custom-popover{
+    --bs-popover-header-bg: #900;
+    --bs-popover-header-color: #fff;
+    --bs-popover-header-font-size: 1.25rem;
+    --bs-popover-border-color: #666;
+    --bs-popover-font-size: 1rem;
+}
+.tamanho-letra{
+    font-size: 16px;
+    }
+
+.float-start{
+  height: 95%;
+}
+
+.card-header{
+  background-color: #FA8072;
+  color: #fff;
+}

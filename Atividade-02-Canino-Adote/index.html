@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Canino Adote</title>
+
+  <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon" >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Javascript -->
+  <script src="js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- start header -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-md px-4">
+        <div class="navbar-brand">
+          <a href="#home"><img src="imagens/logo.png" alt="" height="65"></a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menubar"><span
+              class="fa-solid fa-bars"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="menubar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link text-white">
+                <spam class="tamanho-letra">
+                  <div class="px-2">Home</div>
+                </spam>
+              </a></li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">
+                <spam class="tamanho-letra">Instruções</spam>
+              </a>
+              <ul class="dropdown-menu p-3">
+                <li><a href="index.html" class="dropdown-item text-white">Quem somos</a></li>
+                <li><a href="adotar.html" class="dropdown-item text-white">Encontre um amigo</a></li>
+                <li><a href="cuidados.html" class="dropdown-item text-white">Cuidados com o animal</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="cadastro.html" class="nav-link text-white">
+                <spam class="tamanho-letra">Cadastro</spam>
+              </a></li>
+
+            <li class="nav-item"><a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal-contato">Contato</a></li>
+
+            <li class="nav-item"><a href="#" class="nav-link text-white" data-bs-toggle="modal"
+              data-bs-target="#modal-sobre">Sobre</a></li>
+          </ul>
+        </div>
+        <div class="me-3">
+          <a href="https://www.facebook.com/loren.adotelove" target="_blank"><span
+              class="fa-brands fa-facebook-square text-white"></span></a>
+          <a href="https://www.instagram.com/adopatas/" target="_blank"><span
+              class="fa-brands fa-instagram-square text-white ms-2"></span></a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="mt-5 p-5 boasvindas no-margin" id="home">
+      <div class="mt-5 p-5 pt-5">
+        <h2 class="text-center display-5 text-uppercase fw-bold py-5" id="quem-somos"">Adote um animal,ganhe um amigo!</h2>
+
+        <p class=" h3">Ajude a protegê-lo hoje.</p>
+
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <h2 class="text-center text-uppercase fw-bold pb-3">Canino Adote</h2>
+
+      <div class="row pb-5">
+        <div class="col-md-5 col-lg-3">
+          <img src="imagens/capa.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-7 col-lg-9">
+          <p>A ONG "Canino Adote" dedica-se apaixonadamente à promoção do bem-estar dos animais, guiada por objetivos
+            nobres e fundamentais. Em primeiro lugar, buscamos combater a crueldade e o abandono, oferecendo abrigos
+            seguros e cuidados veterinários a animais em situação de vulnerabilidade. Nossos esforços visam também
+            fomentar a conscientização sobre a importância da adoção responsável e do controle populacional, por meio de
+            campanhas educativas e programas de esterilização.
+
+          </p>
+
+          <p>Além disso, a "Canino Adote" empenha-se em preservar habitats naturais e ecossistemas, promovendo a
+            coexistência harmoniosa entre humanos e animais selvagens. Colaboramos ativamente com comunidades locais
+            para desenvolver práticas sustentáveis e respeitosas com a fauna, contribuindo para a conservação da
+            biodiversidade. A realização de eventos de adoção, palestras e mutirões de cuidados com animais são parte
+            integrante de nossa missão, buscando construir uma sociedade mais empática e comprometida com a proteção dos
+            nossos companheiros de planeta.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <footer class="py-2 px-3 text-light rodape no-margin">
+        <img src="imagens/logo2.png" class="float-start">
+
+        <p class="float-end pt-3">&copy; 2024 - Canino Adote</p>
+      </footer>
+    </div>
+
+  <div class="modal fade" id="modal-contato" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="" method="get">
+          <div class="modal-header border-0">
+            <h2><span class="fa-regular fa-id-card"></span> Contato</h2>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <label for="">Nome:</label>
+            <input type="text" name="tNome" placeholder="digite seu nome completo" class="form-control border-dark">
+
+            <label for="" class="pt-3">Email:</label>
+            <input type="email" name="tEmail" placeholder="por ex.: joaodasilva@email.com" class="form-control border-dark mb-3">
+
+            <label for="">Mensagem:</label>
+            <textarea name="tMsg" rows="5" placeholder="digite aqui a sua mensagem" class="form-control border-dark"></textarea>
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            <input type="reset" value="limpar" class="btn btn-danger">
+            <input type="submit" value="enviar" class="btn btn-success">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-sobre" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h2><span class="fa-regular fa-id-card"></span> Sobre o Site</h2>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Site ganhador do primeito Hackathom de Front End com o tema de <strong>Adoção de Animais</strong>.</p>
+
+          <h3>Criador</h3>
+          <p>O site criado por Gabriel Portugal Castilho.</p>
+          <img src="./imagens/eu/Na_Cadeira.jpg" alt="Foto do Criador"  width=50% class="img-fluid">
+          <p>Siga-me no Instagram: <a href="https://www.instagram.com/portugalcastilho/" target="_blank">@portugalcastilho</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

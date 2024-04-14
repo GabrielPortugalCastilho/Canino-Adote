@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Canino Adote</title>
+
+  <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Javascript -->
+  <script src="js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- start header -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-md px-4">
+        <div class="navbar-brand">
+          <a href="#home"><img src="imagens/logo.png" alt="" height="65"></a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menubar"><span
+              class="fa-solid fa-bars"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="menubar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link text-white">
+                <spam class="tamanho-letra">
+                  <div class="px-2">Home</div>
+                </spam>
+              </a></li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">
+                <spam class="tamanho-letra">Instruções</spam>
+              </a>
+              <ul class="dropdown-menu p-3">
+                <li><a href="index.html" class="dropdown-item text-white">Quem somos</a></li>
+                <li><a href="adotar.html" class="dropdown-item text-white">Encontre um amigo</a></li>
+                <li><a href="cuidados.html" class="dropdown-item text-white">Cuidados com o animal</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="cadastro.html" class="nav-link text-white">
+                <spam class="tamanho-letra">Cadastro</spam>
+              </a></li>
+
+            <li class="nav-item"><a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal-contato">Contato</a></li>
+
+            <li class="nav-item"><a href="#" class="nav-link text-white" data-bs-toggle="modal"
+              data-bs-target="#modal-sobre">Sobre</a></li>
+          </ul>
+        </div>
+        <div class="me-3">
+          <a href="https://www.facebook.com/loren.adotelove" target="_blank"><span
+              class="fa-brands fa-facebook-square text-white"></span></a>
+          <a href="https://www.instagram.com/adopatas/" target="_blank"><span
+              class="fa-brands fa-instagram-square text-white ms-2"></span></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="my-5 pt-4"></div>
+
+    <form action="" method="post" class="ps-5 pb-4">
+      <h2 class="text-uppercase text-center fw-bold">Cadastro</h2>
+
+      <h2><span class="fa-solid fa-user-plus"></span> Identificação</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <label for="">Nome:</label>
+          <input type="text" name="tNome" placeholder="digite seu nome completo"
+            class="form-control border-secondary" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="">Nascimento:</label>
+          <input type="date" name="tNasc" class="form-control border-secondary">
+        </div>
+
+        <div class="col-md-5 mt-3">
+          <label for="">Email:</label>
+          <input type="email" name="tEmail" placeholder="por ex.: joaodasilva@email.com"
+            class="form-control border-secondary" required id="email">
+          <p id="resultado1" class="m-0"></p>
+        </div>
+
+        
+
+        <div class="col-md-2 mt-3">
+          <label for="">CPF:</label>
+          <!-- <input type="number" name="" id="" class="form-control border-secondary" value="0" min="0" max="5"> -->
+          <input type="text" name="tCpf" placeholder="digite apenas números"
+            class="form-control border-secondary" required id="cpf">
+          <p id="resultado4"></p>
+        </div>
+
+        <div class="col-md-2 mt-3">
+          <label for="">Sexo:</label>
+          <div class="form-check">
+            <input type="radio" name="tSex" class="form-check-input border-secondary" value="fem" id="fem" checked>
+            <label for="fem" class="form-check-label">Feminino</label>
+          </div>
+
+          <div class="form-check">
+            <input type="radio" name="tSex" class="form-check-input border-secondary" value="masc" id="masc">
+            <label for="masc" class="form-check-label">Masculino</label>
+          </div>
+        </div>
+
+        <div class="col-md-5 mt-3">
+          <label for="">Envie uma foto:</label>
+          <input type="file" name="tFoto" class="form-control border-secondary">
+        </div>
+      </div>
+
+      <h2 class="mb-3"><span class="fa-solid fa-address-card"></span> endereço</h2>
+
+      <div class="row">
+        <div class="col-md-7">
+          <label for="">endereço</label>
+          <input type="text" placeholder="rua, avenida, praça, etc." class="form-control border-secondary mb-3">
+        </div>
+
+        <div class="col-md-2">
+          <label for="">número</label>
+          <input type="text" class="form-control border-secondary" placeholder="nº">
+          <!-- <input type="number" name="tNum" class="form-control border-secondary" min="1" max="50" value="1"> -->
+        </div>
+
+        <div class="col-md-3"></div>
+
+        <div class="col-md-3">
+          <label for="" class="">complemento</label>
+          <input type="text" class="form-control border-secondary mb-3" placeholder="apto, casa, bloco, etc.">
+        </div>
+
+        <div class="col-md-6">
+          <label for="" class="">bairro</label>
+          <input type="text" class="form-control border-secondary" placeholder="bairro, jardim, condomínio, etc.">
+        </div>
+
+        <div class="col-md-3"></div>
+
+        <div class="col-md-2">
+          <label for="" class="">CEP</label>
+          <input type="text" class="form-control border-secondary" placeholder="apenas nº" id="cep">
+          <div id="mensagemErro"></div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="" class="">cidade</label>
+          <input type="text" class="form-control border-secondary mb-3" placeholder="Paraguaçu, Alfenas, Machado, etc" readonly id="cidade">
+        </div>
+
+        <!-- <div class="col-md-1">
+          <label for="">Estado</label>
+          <input type="text" name="tEstado" id="estado" readonly class="form-control border-secondary">
+        </div> -->
+
+        <div class="col-md-3">
+            <label for="" class="">estado</label>
+            <select name="tEstado" class="form-select border-secondary">
+                <option disabled selected>Escolha um estado</option>
+                <option disabled>---------------------</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <!-- <input type="text" id="estado" name="tEstado" class="form-control border-secondary" readonly> -->
+        </div>
+      </div>
+
+      <h2 class="mb-3"><span class="fas fa-user-friends"></span> contato</h2>
+
+      <div class="row">
+        <div class="col-md-3">
+          <label for="">telefone</label>
+          <input type="text" class="form-control border-secondary" placeholder="digite apenas núneros" id="tel">
+        </div>
+
+        <div class="col-md-3">
+          <label for="">celular</label>
+          <input type="text" class="form-control border-secondary"placeholder="digite apenas números" id="cel">
+          <div class="form-check">
+            <input type="checkbox" checked class="form-check-input" >
+            <label class="form-check-label"> <span class="fab fa-whatsapp"></span> Whatsapp?</label>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <label for="">Facebook</label>
+          <div class="input-group">
+            <span class="fab fa-facebook-f input-group-text pt-2 border border-secondary"></span>
+            <input type="text" class="form-control border-secondary" placeholder="facebook">
+          </div>
+        </div>
+
+        <div class="col-md-8 mt-3">
+          <label for="">Instagram</label>
+          <div class="input-group">
+            <span class="fab fa-instagram input-group-text pt-2 border border-secondary"></span>
+            <input type="text" class="form-control border-secondary" placeholder="instagram">
+          </div>
+        </div>
+      </div>
+
+      <h2><span class="fab fa-wpforms"></span> enviar formulário?</h2>
+
+      <div class="btn-group">
+        <input type="reset" value="limpar" class="btn btn-danger">
+        <input type="submit" value="enviar" class="btn btn-success">
+      <!-- <button type="reset" class="btn btn-danger py-2 px-4">limpar</button>
+      <button type="submit" class="btn btn-success py-2 px-4">enviar</button> -->
+      </div>
+    </form>
+
+    <footer class="py-2 px-3 text-light rodape no-margin">
+      <img src="imagens/logo2.png" class="float-start">
+
+      <p class="float-end pt-3">&copy; 2024 - Canino Adote</p>
+    </footer>
+  </div>
+  <div class="modal fade" id="modal-contato" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="" method="get">
+          <div class="modal-header border-0">
+            <h2><span class="fa-regular fa-id-card"></span> Contato</h2>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <label for="">Nome:</label>
+            <input type="text" name="tNome" placeholder="digite seu nome completo" class="form-control border-dark">
+
+            <label for="" class="pt-3">Email:</label>
+            <input type="email" name="tEmail" placeholder="por ex.: joaodasilva@email.com" class="form-control border-dark mb-3">
+
+            <label for="">Mensagem:</label>
+            <textarea name="tMsg" rows="5" placeholder="digite aqui a sua mensagem" class="form-control border-dark"></textarea>
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            <input type="reset" value="limpar" class="btn btn-danger">
+            <input type="submit" value="enviar" class="btn btn-success">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-sobre" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h2><span class="fa-regular fa-id-card"></span> Sobre o Site</h2>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Site ganhador do primeito Hackathom de Front End com o tema de <strong>Adoção de Animais</strong>.</p>
+
+          <h3>Criador</h3>
+          <p>O site criado por Gabriel Portugal Castilho.</p>
+          <img src="./imagens/eu/Na_Cadeira.jpg" alt="Foto do Criador"  width=50% class="img-fluid">
+          <p>Siga-me no Instagram: <a href="https://www.instagram.com/portugalcastilho/" target="_blank">@portugalcastilho</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
